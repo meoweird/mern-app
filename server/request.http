@@ -1,0 +1,34 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username" : "meoweird2",
+    "password" : "meoweird"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username" : "meoweird2",
+    "password" : "meoweird"
+}
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDA1NTE0Y2FkNTI5YTBmZWI5ZmU5ODQiLCJpYXQiOjE2Nzg2ODA0OTJ9.y1okYTglTOIPWbxWjFjCRqPm-kCS2VolH_NCLxa118M
+
+{
+    "title":"meomeo",
+    "description": "axcxcvzvc",
+    "url":"youtube.com",
+    "status":"TO LEARN"
+}
+
+###
+GET http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDA1NTE0Y2FkNTI5YTBmZWI5ZmU5ODQiLCJpYXQiOjE2Nzg2ODA0OTJ9.y1okYTglTOIPWbxWjFjCRqPm-kCS2VolH_NCLxa118M
